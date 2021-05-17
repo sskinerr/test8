@@ -1,0 +1,202 @@
+@font-face{font-family:kokoko;
+src: url(19572.ttf);}
+html{height:100%}
+body{background: linear-gradient(#c8c8c8,#FAFAFA,#c8c8c8);}
+
+.wrapper{
+-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color: transparent;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 250px;
+    bottom: -150;}
+    
+.container{
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    display: -ms-grid;
+    display: grid;
+    place-items: center center;}
+    
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    height: 120px;
+    width: 120px;
+    background: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(#FAFAFA),
+    to(#D0D3D8));
+    background:-o-linear-gradient(
+    bottom,
+    #FAFAFA,
+    #D0D3D8);
+    background:linear-gradient(
+   to top,
+   #FAFAFA,
+   #D0D3D8);
+   border-radius: 50%;
+   position: absolute;
+   cursor: pointer;
+   outline: none;}
+input[type="checkbox"]:before{
+    position: absolute;
+    content: "";
+    height: 180px;
+    width: 180px;
+    background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(#FAFAFA),
+    to(#D0D3D8));
+    background: -o-linear-gradient(
+    top,
+    #FAFAFA,
+    #D0D3D8);
+    background: linear-gradient(
+    to bottom,
+    #FAFAFA,
+    #D0D3D8);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    bottom: -30px;
+    left: -30px;
+    -webkit-box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+input[type="checkbox"]:after{
+    position: absolute one;
+    content: "";
+    height: 210px;
+    width: 210px;
+    background: #D6DCE3;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    bottom: -45px;
+    left: -45px;
+        transition:1s ease all;
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+label{				
+
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+              top: 50%; left: 50%;}
+    
+    label > .fas{
+    transition:1s ease all;
+    font-size:78px;
+    color: #A8AABA;
+    margin-top:-5px;
+    margin-left:8px;}
+    
+input[type="checkbox"]:checked + label>.fas{
+color: #15e38a;}
+
+
+input[type="checkbox"]:checked:after{
+background: #15e38a;}
+    
+    .fas:hover{color: #15e38a;    
+    transition:0.5s ease all;}
+    
+     .fas:hover + after{background: #15e38a;
+     transition:0.5s ease all;}   
+    
+      .b{height:32px;
+        width:32px;
+        margin-top:14px;
+        filter: opacity(50%);}
+
+
+
+.x{width:95%;
+		 height:89.2px;
+		 margin-left:auto;
+		 transition:0.4s ease all;
+		 font-family:"kokoko";
+   margin-right:auto;
+   margin-top:110px;
+   font-size: 21px;
+   line-height:25px;
+   padding: 20px 0;
+   width: 350px;
+   list-style: none;
+   bottom: 50px;
+   text-align: center;
+   border-radius: 29px;
+   background:
+   linear-gradient(145deg, #d9d9d9, #ffffff);
+   box-shadow:38px 38px 57px #d9d9d9,
+             -20px -20px 57px #ffffff;}
+						    
+    
+    
+
+.item{transition:0.7s ease all;
+    border-radius:50%;
+    background: 
+    linear-gradient(145deg, #b5b5b5, #ffffff);
+    box-shadow:
+    10px 10px 29px black),
+    -5px -5px 19px #ffffff;   
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:-70px;
+    text-align: center;
+    height:60px;width:60px;
+    padding:0px;
+    list-style: none;}
+    
+    .item:hover{
+    border-radius: 90px;
+    background: #969696;
+    box-shadow: inset 5px 5px 15px #4e4e4e,
+    inset -5px -5px 20px #dedede;}
+    
+    .item:hover .menu{
+    opacity: 1;
+    display: block;
+    border-radius: 29px;
+    z-index:5000;}
+    
+    .item:hover .me{
+    transition:1.4s ease all;
+    color: black;}
+    
+    .me{color: white;
+    transition:0.7s ease all;}
+    
+    .menu{position: absolute;
+    transition:0.85s ease all;
+    text-align: center;
+    border-radius: 15px;
+    background:
+    linear-gradient(145deg, #d9d9d9, #ffffff);
+    width:360px;
+    left:50%;
+    margin-right:-50%;
+    transform:
+    translate(-50%,-50%);
+    margin-top:120px;
+    font-size:17px;
+    font-family:kokoko;
+    opacity:0;
+    z-index:-300;}            
+    #all{margin-top:18px;} 
+    
+    li{list-style: none;}
+    
